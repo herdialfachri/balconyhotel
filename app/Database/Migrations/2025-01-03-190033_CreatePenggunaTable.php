@@ -35,7 +35,7 @@ class CreatePenggunaTable extends Migration
             'role' => [
                 'type'       => 'ENUM',
                 'constraint' => ['1', '2'],
-                'default'    => '2', // Default sebagai user
+                'default'    => '2',
             ],
         ]);
         $this->forge->addKey('id', true);

@@ -31,6 +31,18 @@ class CreateDataKamarTable extends Migration
                 'type'       => 'DECIMAL',
                 'constraint' => '10,2',
             ],
+            'kapasitas' => [
+                'type'       => 'INT',
+                'constraint' => 2,
+            ],
+            'tipe_kasur' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '25',
+            ],
+            'fasilitas' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '100',
+            ],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->createTable('data_kamar');

@@ -38,6 +38,17 @@ class CreateSuksesReservasiTable extends Migration
             'id_kamar' => [
                 'type'       => 'INT',
                 'constraint' => 5,
+                'unsigned'   => true,
+            ],
+            'id_pengguna' => [
+                'type'       => 'INT',
+                'constraint' => 5,
+                'unsigned'   => true,
+            ],
+            'id_reservasi' => [
+                'type'       => 'INT',
+                'constraint' => 5,
+                'unsigned'   => true,
             ],
             'tanggal_pesan' => [
                 'type'       => 'DATE',
@@ -47,6 +58,9 @@ class CreateSuksesReservasiTable extends Migration
             ],
         ]);
         $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('id_kamar', 'data_kamar', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('id_pengguna', 'pengguna', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('id_reservasi', 'reservasi', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('sukses_reservasi');
     }
 

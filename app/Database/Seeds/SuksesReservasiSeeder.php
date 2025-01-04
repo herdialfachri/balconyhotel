@@ -3,26 +3,30 @@
 namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
+use Faker\Factory;
 
 class SuksesReservasiSeeder extends Seeder
 {
     public function run()
     {
-        $data = [
-            [
-                'nama_depan' => 'Alice',
-                'nama_belakang' => 'Johnson',
-                'email' => 'alice.johnson@example.com',
-                'no_telp' => '08123456786',
-                'harga' => 3000000,
-                'id_kamar' => 3,
-                'tanggal_pesan' => '2023-10-01',
-                'tanggal_keluar' => '2023-10-10',
-            ],
-            // Tambahkan data sukses reservasi lainnya
-        ];
+        $faker = Factory::create();
 
-        $this->db->table('sukses_reservasi')->insertBatch($data);
+        for ($i = 0; $i < 10; $i++) {
+            $data = [
+                'nama_depan' => $faker->firstName,
+                'nama_belakang' => $faker->lastName,
+                'email' => $faker->email,
+                'no_telp' => $faker->phoneNumber,
+                'harga' => $faker->randomFloat(2, 100000, 1000000),
+                'id_kamar' => $faker->numberBetween(1, 10),
+                'id_pengguna' => $faker->numberBetween(1, 10),
+                'id_reservasi' => $faker->numberBetween(1, 10),
+                'tanggal_pesan' => $faker->date,
+                'tanggal_keluar' => $faker->date,
+            ];
+
+            $this->db->table('sukses_reservasi')->insert($data);
+        }
     }
 }
 ?>

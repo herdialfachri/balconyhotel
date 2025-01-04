@@ -3,26 +3,30 @@
 namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
+use Faker\Factory;
 
 class BatalReservasiSeeder extends Seeder
 {
     public function run()
     {
-        $data = [
-            [
-                'nama_depan' => 'John',
-                'nama_belakang' => 'Smith',
-                'email' => 'john.smith@example.com',
-                'no_telp' => '08123456787',
-                'harga' => 2000000,
-                'id_kamar' => 2,
-                'tanggal_pesan' => '2023-11-01',
-                'tanggal_keluar' => '2023-11-05',
-            ],
-            // Tambahkan data batal reservasi lainnya
-        ];
+        $faker = Factory::create();
 
-        $this->db->table('batal_reservasi')->insertBatch($data);
+        for ($i = 0; $i < 10; $i++) {
+            $data = [
+                'nama_depan' => $faker->firstName,
+                'nama_belakang' => $faker->lastName,
+                'email' => $faker->email,
+                'no_telp' => $faker->phoneNumber,
+                'harga' => $faker->randomFloat(2, 100000, 1000000),
+                'id_kamar' => $faker->numberBetween(1, 10),
+                'id_pengguna' => $faker->numberBetween(1, 10),
+                'id_reservasi' => $faker->numberBetween(1, 10),
+                'tanggal_pesan' => $faker->date,
+                'tanggal_keluar' => $faker->date,
+            ];
+
+            $this->db->table('batal_reservasi')->insert($data);
+        }
     }
 }
 ?>
