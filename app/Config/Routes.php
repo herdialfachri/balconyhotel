@@ -7,5 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'FrontController::index');
 $routes->get('/room', 'FrontController::room');
+$routes->get('/about_us', 'FrontController::about_us');
+$routes->get('/contact', 'FrontController::contact');
+$routes->get('/booking', 'FrontController::booking');
 
-$routes->get('/admin_balcony', 'BackController::index');
+$routes->get('/login', 'BackController::index');

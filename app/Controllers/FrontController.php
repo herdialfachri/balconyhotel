@@ -17,4 +17,19 @@ class FrontController extends BaseController
         $data['data_kamar'] = $model->findAll();
         return view('front/rooms', $data);
     }
+
+    public function about_us(): string
+    {
+        return view('front/about-us');
+    }
+
+    public function contact(): string
+    {
+        return view('front/contact');
+    }
+
+    public function booking(): string
+    {
+        return view('front/booking');
+    }
 }
