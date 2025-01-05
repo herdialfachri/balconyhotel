@@ -69,7 +69,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="/booking?nama_kamar=<?= $kamar['nama_kamar'] ?>&harga=<?= $kamar['harga'] ?>&kapasitas=<?= $kamar['kapasitas'] ?>&tipe_kasur=<?= $kamar['tipe_kasur'] ?>&fasilitas=<?= $kamar['fasilitas'] ?>" class="primary-btn">Booking Now!</a>
+                            <a href="/booking?id=<?= $kamar['id'] ?>&nama_kamar=<?= $kamar['nama_kamar'] ?>&harga=<?= $kamar['harga'] ?>&kapasitas=<?= $kamar['kapasitas'] ?>&tipe_kasur=<?= $kamar['tipe_kasur'] ?>&fasilitas=<?= $kamar['fasilitas'] ?>" class="primary-btn">Booking Now!</a>
                         </div>
                     </div>
                 </div>

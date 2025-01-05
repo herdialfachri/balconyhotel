@@ -78,22 +78,12 @@
             <li class="nav-item active">
               <a
                 data-bs-toggle="collapse"
-                href="#dashboard"
+                href="#"
                 class="collapsed"
                 aria-expanded="false">
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
-                <span class="caret"></span>
               </a>
-              <div class="collapse" id="dashboard">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a href="../demo1/index.html">
-                      <span class="sub-item">Dashboard 1</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </li>
             <li class="nav-section">
               <span class="sidebar-mini-icon">
@@ -216,27 +206,6 @@
               </div>
             </li>
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#maps">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Maps</p>
-                <span class="caret"></span>
-              </a>
-              <div class="collapse" id="maps">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a href="maps/googlemaps.html">
-                      <span class="sub-item">Google Maps</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="maps/jsvectormap.html">
-                      <span class="sub-item">Jsvectormap</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
               <a data-bs-toggle="collapse" href="#charts">
                 <i class="far fa-chart-bar"></i>
                 <p>Charts</p>
@@ -252,71 +221,6 @@
                   <li>
                     <a href="charts/sparkline.html">
                       <span class="sub-item">Sparkline</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="widgets.html">
-                <i class="fas fa-desktop"></i>
-                <p>Widgets</p>
-                <span class="badge badge-success">4</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../../documentation/index.html">
-                <i class="fas fa-file"></i>
-                <p>Documentation</p>
-                <span class="badge badge-secondary">1</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#submenu">
-                <i class="fas fa-bars"></i>
-                <p>Menu Levels</p>
-                <span class="caret"></span>
-              </a>
-              <div class="collapse" id="submenu">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a data-bs-toggle="collapse" href="#subnav1">
-                      <span class="sub-item">Level 1</span>
-                      <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="subnav1">
-                      <ul class="nav nav-collapse subnav">
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a data-bs-toggle="collapse" href="#subnav2">
-                      <span class="sub-item">Level 1</span>
-                      <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="subnav2">
-                      <ul class="nav nav-collapse subnav">
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="sub-item">Level 1</span>
                     </a>
                   </li>
                 </ul>
@@ -398,163 +302,6 @@
               </li>
               <li class="nav-item topbar-icon dropdown hidden-caret">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="messageDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false">
-                  <i class="fa fa-envelope"></i>
-                </a>
-                <ul
-                  class="dropdown-menu messages-notif-box animated fadeIn"
-                  aria-labelledby="messageDropdown">
-                  <li>
-                    <div
-                      class="dropdown-title d-flex justify-content-between align-items-center">
-                      Messages
-                      <a href="#" class="small">Mark all as read</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="message-notif-scroll scrollbar-outer">
-                      <div class="notif-center">
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="back/assets/img/jm_denis.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Jimmy Denis</span>
-                            <span class="block"> How are you ? </span>
-                            <span class="time">5 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="back/assets/img/chadengle.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Chad</span>
-                            <span class="block"> Ok, Thanks ! </span>
-                            <span class="time">12 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="back/assets/img/mlane.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Jhon Doe</span>
-                            <span class="block">
-                              Ready for the meeting today...
-                            </span>
-                            <span class="time">12 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="back/assets/img/talha.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Talha</span>
-                            <span class="block"> Hi, Apa Kabar ? </span>
-                            <span class="time">17 minutes ago</span>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item topbar-icon dropdown hidden-caret">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="notifDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false">
-                  <i class="fa fa-bell"></i>
-                  <span class="notification">4</span>
-                </a>
-                <ul
-                  class="dropdown-menu notif-box animated fadeIn"
-                  aria-labelledby="notifDropdown">
-                  <li>
-                    <div class="dropdown-title">
-                      You have 4 new notification
-                    </div>
-                  </li>
-                  <li>
-                    <div class="notif-scroll scrollbar-outer">
-                      <div class="notif-center">
-                        <a href="#">
-                          <div class="notif-icon notif-primary">
-                            <i class="fa fa-user-plus"></i>
-                          </div>
-                          <div class="notif-content">
-                            <span class="block"> New user registered </span>
-                            <span class="time">5 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-icon notif-success">
-                            <i class="fa fa-comment"></i>
-                          </div>
-                          <div class="notif-content">
-                            <span class="block">
-                              Rahmad commented on Admin
-                            </span>
-                            <span class="time">12 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="back/assets/img/profile2.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="block">
-                              Reza send messages to you
-                            </span>
-                            <span class="time">12 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-icon notif-danger">
-                            <i class="fa fa-heart"></i>
-                          </div>
-                          <div class="notif-content">
-                            <span class="block"> Farrah liked Admin </span>
-                            <span class="time">17 minutes ago</span>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item topbar-icon dropdown hidden-caret">
-                <a
                   class="nav-link"
                   data-bs-toggle="dropdown"
                   href="#"
@@ -569,12 +316,12 @@
                   <div class="quick-actions-scroll scrollbar-outer">
                     <div class="quick-actions-items">
                       <div class="row m-0">
-                        <a class="col-6 col-md-4 p-0" href="#">
+                        <a class="col-6 col-md-4 p-0" href="/login">
                           <div class="quick-actions-item">
                             <div class="avatar-item bg-danger rounded-circle">
                               <i class="far fa-calendar-alt"></i>
                             </div>
-                            <span class="text">Calendar</span>
+                            <span class="text">Dashboard</span>
                           </div>
                         </a>
                         <a class="col-6 col-md-4 p-0" href="#">
@@ -687,11 +434,6 @@
             class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
             <div>
               <h3 class="fw-bold mb-3">Dashboard</h3>
-              <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
-            </div>
-            <div class="ms-md-auto py-2 py-md-0">
-              <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
-              <a href="#" class="btn btn-primary btn-round">Add Customer</a>
             </div>
           </div>
           <div class="row">
@@ -861,8 +603,8 @@
             <a href="http://www.themekita.com">ThemeKita</a>
           </div>
           <div>
-            Distributed by
-            <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+            Developed by
+            <a target="_blank" href="https://herdialfachri.my.id/">herdialfachri</a>.
           </div>
         </div>
       </footer>

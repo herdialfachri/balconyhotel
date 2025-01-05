@@ -3,23 +3,19 @@
 <?= $this->section('title') ?>Rooms<?= $this->endSection() ?>
 
 <?= $this->section('mobile-menu') ?>
-
-<li class="active"><a href="/">Home</a></li>
-<li><a href="room">Rooms</a></li>
-<li><a href="/about_us">About Us</a></li>
-<li><a href="/contact">Contact</a></li>
-<li><a href="/login">Login</a></li>
-
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="room">Rooms</a></li>
+    <li><a href="/about_us">About Us</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/login">Login</a></li>
 <?= $this->endSection() ?>
 
 <?= $this->section('main-menu') ?>
-
-<li class="active"><a href="/">Home</a></li>
-<li><a href="room">Rooms</a></li>
-<li><a href="/about_us">About Us</a></li>
-<li><a href="/contact">Contact</a></li>
-<li><a href="/login">Login</a></li>
-
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="room">Rooms</a></li>
+    <li><a href="/about_us">About Us</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/login">Login</a></li>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
@@ -33,39 +29,7 @@
                     <h1>Sona A Luxury Hotel</h1>
                     <p>Here are the best hotel booking sites, including recommendations for international
                         travel and for finding low-priced hotel rooms.</p>
-                    <a href="#" class="primary-btn">Discover Now</a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
-                <div class="booking-form">
-                    <h3>Booking Your Hotel</h3>
-                    <form action="/room">
-                        <div class="check-date">
-                            <label for="date-in">Check In:</label>
-                            <input type="text" class="date-input" id="date-in">
-                            <i class="icon_calendar"></i>
-                        </div>
-                        <div class="check-date">
-                            <label for="date-out">Check Out:</label>
-                            <input type="text" class="date-input" id="date-out">
-                            <i class="icon_calendar"></i>
-                        </div>
-                        <div class="select-option">
-                            <label for="guest">Guests:</label>
-                            <select id="guest">
-                                <option value="">2 Adults</option>
-                                <option value="">3 Adults</option>
-                            </select>
-                        </div>
-                        <div class="select-option">
-                            <label for="room">Room:</label>
-                            <select id="room">
-                                <option value="">1 Room</option>
-                                <option value="">2 Room</option>
-                            </select>
-                        </div>
-                        <button type="submit">Check Availability</button>
-                    </form>
+                    <a href="/room" class="primary-btn">RSVP Now!</a>
                 </div>
             </div>
         </div>
@@ -93,7 +57,7 @@
                         languages.</p>
                     <p class="s-para">So when it comes to booking the perfect hotel, vacation rental, resort,
                         apartment, guest house, or tree house, we’ve got you covered.</p>
-                    <a href="#" class="primary-btn about-btn">Read More</a>
+                    <a href="about_us" class="primary-btn about-btn">Read More</a>
                 </div>
             </div>
             <div class="col-lg-6">
