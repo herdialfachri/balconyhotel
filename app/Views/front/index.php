@@ -7,7 +7,11 @@
     <li><a href="room">Rooms</a></li>
     <li><a href="/about_us">About Us</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="/masuk">Login</a></li>
+    <?php if (session()->get('logged_in')): ?>
+        <li><a href="/keluar">Logout</a></li>
+    <?php else: ?>
+        <li><a href="/masuk">Login</a></li>
+    <?php endif; ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('main-menu') ?>
@@ -15,8 +19,13 @@
     <li><a href="room">Rooms</a></li>
     <li><a href="/about_us">About Us</a></li>
     <li><a href="/contact">Contact</a></li>
-    <li><a href="/masuk">Login</a></li>
+    <?php if (session()->get('logged_in')): ?>
+        <li><a href="/keluar">Logout</a></li>
+    <?php else: ?>
+        <li><a href="/masuk">Login</a></li>
+    <?php endif; ?>
 <?= $this->endSection() ?>
+
 
 <?= $this->section('content') ?>
 

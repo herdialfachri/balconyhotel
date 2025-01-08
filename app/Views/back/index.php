@@ -388,7 +388,7 @@
                   </div>
                   <span class="profile-username">
                     <span class="op-7">Hi,</span>
-                    <span class="fw-bold">Hizrian</span>
+                    <span class="fw-bold"><?= session()->get('nama'); ?></span>
                   </span>
                 </a>
                 <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -402,8 +402,7 @@
                             class="avatar-img rounded" />
                         </div>
                         <div class="u-text">
-                          <h4>Hizrian</h4>
-                          <p class="text-muted">hello@example.com</p>
+                          <h4><?= session()->get('nama'); ?></h4>
                           <a
                             href="profile.html"
                             class="btn btn-xs btn-secondary btn-sm">View Profile</a>
@@ -418,7 +417,7 @@
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Account Setting</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Logout</a>
+                      <a class="dropdown-item" href="/keluar">Logout</a>
                     </li>
                   </div>
                 </ul>

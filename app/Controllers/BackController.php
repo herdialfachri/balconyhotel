@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\DataKamarModel;
-use CodeIgniter\Controller;
 
 class BackController extends BaseController
 {
