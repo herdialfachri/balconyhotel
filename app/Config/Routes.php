@@ -11,4 +11,4 @@ $routes->get('/about_us', 'FrontController::about_us');
 $routes->get('/contact', 'FrontController::contact');
 $routes->get('/booking', 'FrontController::booking');
 
-$routes->get('/login', 'BackController::index');
+$routes->get('/masuk', 'LoginController::index');
