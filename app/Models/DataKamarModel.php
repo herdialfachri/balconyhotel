@@ -10,4 +10,3 @@ class DataKamarModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['nama_kamar', 'gambar', 'deskripsi', 'harga', 'kapasitas', 'tipe_kasur', 'fasilitas'];
 }
-?>

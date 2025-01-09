@@ -1,3 +1,4 @@
+<!-- booking.php -->
 <?= $this->extend('template/template') ?>
 
 <?= $this->section('title') ?>Booking<?= $this->endSection() ?>
@@ -10,33 +11,32 @@
         <div class="col-xl-5 col-lg-6">
             <div class="booking-form">
                 <h3>Booking Your Hotel</h3>
-                <form action="/room">
+                <form action="/booking/save" method="post">
                     <div class="form-group">
                         <label for="first-name">Nama Depan:</label>
-                        <input type="text" id="first-name" name="first-name" class="form-control">
+                        <input type="text" id="first-name" name="nama_depan" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="last-name">Nama Belakang:</label>
-                        <input type="text" id="last-name" name="last-name" class="form-control">
+                        <input type="text" id="last-name" name="nama_belakang" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" class="form-control">
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">No Telp:</label>
-                        <input type="tel" id="phone" name="phone" class="form-control">
+                        <input type="tel" id="phone" name="no_telp" class="form-control" required>
                     </div>
                     <div class="check-date">
                         <label for="date-in">Check In:</label>
-                        <input type="text" class="date-input" id="date-in">
-                        <i class="icon_calendar"></i>
+                        <input type="date" class="date-input" id="date-in" name="tanggal_pesan" required>
                     </div>
                     <div class="check-date">
                         <label for="date-out">Check Out:</label>
-                        <input type="text" class="date-input" id="date-out">
-                        <i class="icon_calendar"></i>
+                        <input type="date" class="date-input" id="date-out" name="tanggal_keluar" required>
                     </div>
+                    <input type="hidden" name="id_kamar" value="<?= $_GET['id'] ?>">
                     <button type="submit" class="btn btn-primary">RSVP Now</button>
                 </form>
             </div>
