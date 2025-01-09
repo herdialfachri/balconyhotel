@@ -8,8 +8,17 @@ class ReservasiModel extends Model
 {
     protected $table = 'reservasi';
     protected $primaryKey = 'id';
+    protected $useAutoIncrement = true;
+    protected $returnType = 'array';
     protected $allowedFields = [
-        'nama_depan', 'nama_belakang', 'email', 'no_telp',
-        'harga', 'id_kamar', 'id_pengguna', 'tanggal_pesan', 'tanggal_keluar'
+        'nama_depan',
+        'nama_belakang',
+        'email',
+        'no_telp',
+        'harga',
+        'id_kamar',
+        'id_pengguna',
+        'tanggal_pesan',
+        'tanggal_keluar'
     ];
 }
