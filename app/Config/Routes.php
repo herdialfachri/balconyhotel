@@ -15,6 +15,10 @@ $routes->post('booking/save', 'BookingController::save');
 
 $routes->get('/masuk', 'AuthController::index');
 $routes->get('/keluar', 'AuthController::logout');
-$routes->get('/admin', 'BackController::index');
+$routes->get('/admin', 'CountingController::index');
+
+
+$routes->get('/reservasi', 'ReservasiController::index');
+$routes->get('/kamar', 'DataKamarController::index');
 
 $routes->post('/auth/login', 'AuthController::login');

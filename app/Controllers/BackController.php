@@ -8,9 +8,7 @@ class BackController extends BaseController
 {
     public function index(): string
     {
-        $model = new DataKamarModel();
-        $data['data_kamar'] = $model->findAll();
-        return view('back/index', $data);
+        return view('?');
     }
 
     public function create()
