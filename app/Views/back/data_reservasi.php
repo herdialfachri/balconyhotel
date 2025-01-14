@@ -71,10 +71,7 @@
                                 <th>Tanggal Keluar</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <?php if (!empty($data_reservasi)): ?>
-                                <?php foreach ($data_reservasi as $reservasi): ?>
-                                    <tr>
+                        <tbody> <?php if (!empty($data_reservasi)): ?> <?php foreach ($data_reservasi as $reservasi): ?> <tr>
                                         <td><?= esc($reservasi['id']) ?></td>
                                         <td><?= esc($reservasi['nama_depan']) ?></td>
                                         <td><?= esc($reservasi['nama_belakang']) ?></td>
@@ -85,21 +82,14 @@
                                         <td><?= esc($reservasi['id_pengguna']) ?></td>
                                         <td><?= esc($reservasi['tanggal_pesan']) ?></td>
                                         <td><?= esc($reservasi['tanggal_keluar']) ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            <?php else: ?>
-                                <tr>
+                                    </tr> <?php endforeach; ?> <?php else: ?> <tr>
                                     <td colspan="10" class="text-center">No data available</td>
-                                </tr>
-                            <?php endif; ?>
-                        </tbody>
+                                </tr> <?php endif; ?> </tbody>
                     </table>
-                </div>
+                </div> <?= $pager->links() ?> <!-- Tambahkan pagination links -->
             </div>
         </div>
     </div>
 </div>
-
-
 
 <?= $this->endSection() ?>
