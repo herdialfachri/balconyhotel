@@ -15,7 +15,8 @@ class CountingController extends Controller
         return view('back/index', [
             'total_users' => $data['total_users'] ?? 0,
             'total_rooms' => $data['total_rooms'] ?? 0,
-            'total_reservations' => $data['total_reservations'] ?? 0
+            'total_reservations' => $data['total_reservations'] ?? 0,
+            'monthly_reservations' => $data['monthly_reservations'] ?? []
         ]);
     }
 }
