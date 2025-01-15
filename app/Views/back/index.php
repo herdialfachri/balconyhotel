@@ -106,5 +106,79 @@
   </div>
 </div>
 
+<!-- Line Chart -->
+<div class="row mt-4">
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Reservasi per Bulan</div>
+      </div>
+      <div class="card-body">
+        <div class="chart-container">
+          <canvas id="mylinechart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Ambil data dari PHP
+  const monthlyReservations = <?= json_encode($monthly_reservations) ?>;
+
+  // Array untuk nama bulan
+  const monthNames = [
+    "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+    "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+  ];
+
+  // Format data untuk Chart.js
+  const labels = Object.keys(monthlyReservations).map(month => monthNames[parseInt(month) - 1]); // Ubah angka bulan menjadi nama bulan
+  const data = Object.values(monthlyReservations);
+
+  // Inisialisasi Chart.js dengan ID mylinechart
+  const ctx = document.getElementById('mylinechart').getContext('2d');
+  const myLineChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Jumlah Reservasi',
+        data: data,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 2,
+        fill: true,
+        tension: 0.1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top'
+        }
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Bulan'
+          }
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Jumlah Reservasi'
+          },
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
 
 <?= $this->endSection() ?>
