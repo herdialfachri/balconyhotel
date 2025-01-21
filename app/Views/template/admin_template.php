@@ -76,27 +76,6 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <?= $this->renderSection('sidebar'); ?>
-            <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#charts">
-                <i class="far fa-chart-bar"></i>
-                <p>Charts</p>
-                <span class="caret"></span>
-              </a>
-              <div class="collapse" id="charts">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a href="charts/charts.html">
-                      <span class="sub-item">Chart Js</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="charts/sparkline.html">
-                      <span class="sub-item">Sparkline</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
