@@ -11,8 +11,6 @@ class DatabaseSeeder extends Seeder
         $this->call('DataKamarSeeder');
         $this->call('PenggunaSeeder'); 
         $this->call('ReservasiSeeder');
-        $this->call('BatalReservasiSeeder');
-        $this->call('SuksesReservasiSeeder');
     }
 }
 ?>
